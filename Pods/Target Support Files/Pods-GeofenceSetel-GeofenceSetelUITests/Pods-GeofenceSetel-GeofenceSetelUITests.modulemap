@@ -1,0 +1,6 @@
+framework module Pods_GeofenceSetel_GeofenceSetelUITests {
+  umbrella header "Pods-GeofenceSetel-GeofenceSetelUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

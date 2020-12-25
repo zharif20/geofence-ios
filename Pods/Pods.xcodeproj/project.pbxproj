@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09FBDE28346609ACC46B33C7474FEB9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		15FAFC5A16803FC589FA43A8CCAC419F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		54AEEF7325A911A021640A65DD94D9B8 /* Pods-GeofenceSetel-GeofenceSetelUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D0EBD727D95F0E9AE14465ECC73945 /* Pods-GeofenceSetel-GeofenceSetelUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		689AA9374937645B242467D61B311761 /* Pods-GeofenceSetelTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E1DAB9337036AAB43C24577DFBDCF /* Pods-GeofenceSetelTests-dummy.m */; };
+		80A215C59F7468297EB3A1D2FD8BFD56 /* Pods-GeofenceSetel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F75DFF7F7470542CC312A1E9FED413D /* Pods-GeofenceSetel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D40975EF1284E73DE8CF10A083118B1 /* Pods-GeofenceSetel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CB9831CAA054374945F0DC8A7412D6 /* Pods-GeofenceSetel-dummy.m */; };
+		8E02B270043468AED122A83C013FD060 /* Pods-GeofenceSetel-GeofenceSetelUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E46085CA3F0B98B6F634DBEA4DEB1D /* Pods-GeofenceSetel-GeofenceSetelUITests-dummy.m */; };
+		D49F8686265E84B6EFBFCA932A48517B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E2225B1811C3EA2CCE09746E7EF62AAA /* Pods-GeofenceSetelTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 258D09F57BDDA0A23BEC5E050A420882 /* Pods-GeofenceSetelTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C17C03C7DEA1B66AA139E0984309CF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37392D2AF932B4C8E30A155299B68B45;
+			remoteInfo = "Pods-GeofenceSetel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A94ACFDDF3A0792ED3AEDFD61EE77C /* Pods-GeofenceSetel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceSetel.release.xcconfig"; sourceTree = "<group>"; };
+		102FC0CB077EB783AC5E6729C44D1CE1 /* Pods-GeofenceSetelTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceSetelTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		258D09F57BDDA0A23BEC5E050A420882 /* Pods-GeofenceSetelTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeofenceSetelTests-umbrella.h"; sourceTree = "<group>"; };
+		31BB0257BC8F13492B4B4F01A5BB5DD7 /* Pods-GeofenceSetel-GeofenceSetelUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceSetel-GeofenceSetelUITests-Info.plist"; sourceTree = "<group>"; };
+		31FC69C3433F5C23403DA8E31E5807C6 /* Pods-GeofenceSetelTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceSetelTests-Info.plist"; sourceTree = "<group>"; };
+		42FAD0CB43E75B39A4706D3D0987C1E2 /* Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43CB9831CAA054374945F0DC8A7412D6 /* Pods-GeofenceSetel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeofenceSetel-dummy.m"; sourceTree = "<group>"; };
+		4537AF29A3AD22F9DFDCF960D9B48971 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeofenceSetel_GeofenceSetelUITests.framework; path = "Pods-GeofenceSetel-GeofenceSetelUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B6CB9E2065C94D9F5C76E0118DFB91 /* Pods-GeofenceSetelTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeofenceSetelTests.modulemap"; sourceTree = "<group>"; };
+		49B82C1AF86F8FD2208CFD9E67D501E3 /* Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5470956B56239CD4546E79CD811A2C38 /* Pods-GeofenceSetel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceSetel-Info.plist"; sourceTree = "<group>"; };
+		54A46272AA126819B6EA11B3AAE9091C /* Pods-GeofenceSetelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceSetelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F75DFF7F7470542CC312A1E9FED413D /* Pods-GeofenceSetel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeofenceSetel-umbrella.h"; sourceTree = "<group>"; };
+		6874CE12091D33AF615318EE5E1DBCB1 /* Pods-GeofenceSetelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceSetelTests.release.xcconfig"; sourceTree = "<group>"; };
+		68869D4AABDE2C68B9D9229E0FEB7937 /* Pods-GeofenceSetel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceSetel-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D59C35259AADA0826C9BF3EF633674A /* Pods-GeofenceSetel-GeofenceSetelUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeofenceSetel-GeofenceSetelUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7837CFF3FCB3B60652ED4DC305FBC130 /* Pods_GeofenceSetel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeofenceSetel.framework; path = "Pods-GeofenceSetel.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3E1DAB9337036AAB43C24577DFBDCF /* Pods-GeofenceSetelTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeofenceSetelTests-dummy.m"; sourceTree = "<group>"; };
+		7EED1DF56DDDD9D60B384C3C00AAA622 /* Pods-GeofenceSetelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeofenceSetelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88D0EBD727D95F0E9AE14465ECC73945 /* Pods-GeofenceSetel-GeofenceSetelUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeofenceSetel-GeofenceSetelUITests-umbrella.h"; sourceTree = "<group>"; };
+		9133155CE4ED7140AB49117710F0E2C2 /* Pods-GeofenceSetel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeofenceSetel.debug.xcconfig"; sourceTree = "<group>"; };
+		94E46085CA3F0B98B6F634DBEA4DEB1D /* Pods-GeofenceSetel-GeofenceSetelUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeofenceSetel-GeofenceSetelUITests-dummy.m"; sourceTree = "<group>"; };
+		9BCCEF4AFEE5A0A08A18666662E26152 /* Pods-GeofenceSetel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeofenceSetel-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C34C5BF0133A413065AD7B3FC3133262 /* Pods_GeofenceSetelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeofenceSetelTests.framework; path = "Pods-GeofenceSetelTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85BC830A10E71DB2EAB0AF3EADA31C6 /* Pods-GeofenceSetel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeofenceSetel.modulemap"; sourceTree = "<group>"; };
+		E0963CD42979DC7495E3BA9FD8F1B423 /* Pods-GeofenceSetel-GeofenceSetelUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeofenceSetel-GeofenceSetelUITests.modulemap"; sourceTree = "<group>"; };
+		E862033AF9BE71BAB437CDD8E0317288 /* Pods-GeofenceSetel-GeofenceSetelUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeofenceSetel-GeofenceSetelUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		034E432A076C7F070BE8212ADA6A34D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FAFC5A16803FC589FA43A8CCAC419F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280DBC9179E33513802C8ACB7B9943B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FBDE28346609ACC46B33C7474FEB9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CF855B70A4E9E83B05850197388CD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49F8686265E84B6EFBFCA932A48517B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		618C62356CD54A782BDB8C588F7D2E39 /* Pods-GeofenceSetel */ = {
+			isa = PBXGroup;
+			children = (
+				D85BC830A10E71DB2EAB0AF3EADA31C6 /* Pods-GeofenceSetel.modulemap */,
+				9BCCEF4AFEE5A0A08A18666662E26152 /* Pods-GeofenceSetel-acknowledgements.markdown */,
+				68869D4AABDE2C68B9D9229E0FEB7937 /* Pods-GeofenceSetel-acknowledgements.plist */,
+				43CB9831CAA054374945F0DC8A7412D6 /* Pods-GeofenceSetel-dummy.m */,
+				5470956B56239CD4546E79CD811A2C38 /* Pods-GeofenceSetel-Info.plist */,
+				5F75DFF7F7470542CC312A1E9FED413D /* Pods-GeofenceSetel-umbrella.h */,
+				9133155CE4ED7140AB49117710F0E2C2 /* Pods-GeofenceSetel.debug.xcconfig */,
+				07A94ACFDDF3A0792ED3AEDFD61EE77C /* Pods-GeofenceSetel.release.xcconfig */,
+			);
+			name = "Pods-GeofenceSetel";
+			path = "Target Support Files/Pods-GeofenceSetel";
+			sourceTree = "<group>";
+		};
+		7AA2742395BADA9AE8B5F19F6140FDA6 /* Pods-GeofenceSetel-GeofenceSetelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0963CD42979DC7495E3BA9FD8F1B423 /* Pods-GeofenceSetel-GeofenceSetelUITests.modulemap */,
+				6D59C35259AADA0826C9BF3EF633674A /* Pods-GeofenceSetel-GeofenceSetelUITests-acknowledgements.markdown */,
+				E862033AF9BE71BAB437CDD8E0317288 /* Pods-GeofenceSetel-GeofenceSetelUITests-acknowledgements.plist */,
+				94E46085CA3F0B98B6F634DBEA4DEB1D /* Pods-GeofenceSetel-GeofenceSetelUITests-dummy.m */,
+				31BB0257BC8F13492B4B4F01A5BB5DD7 /* Pods-GeofenceSetel-GeofenceSetelUITests-Info.plist */,
+				88D0EBD727D95F0E9AE14465ECC73945 /* Pods-GeofenceSetel-GeofenceSetelUITests-umbrella.h */,
+				42FAD0CB43E75B39A4706D3D0987C1E2 /* Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig */,
+				49B82C1AF86F8FD2208CFD9E67D501E3 /* Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig */,
+			);
+			name = "Pods-GeofenceSetel-GeofenceSetelUITests";
+			path = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests";
+			sourceTree = "<group>";
+		};
+		84290B13F33D2CD37B1F83F805184608 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				618C62356CD54A782BDB8C588F7D2E39 /* Pods-GeofenceSetel */,
+				7AA2742395BADA9AE8B5F19F6140FDA6 /* Pods-GeofenceSetel-GeofenceSetelUITests */,
+				F32889F360B977BE8841138539220275 /* Pods-GeofenceSetelTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		919887B50E8FE9B8AA3E0B0E1020702C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7837CFF3FCB3B60652ED4DC305FBC130 /* Pods_GeofenceSetel.framework */,
+				4537AF29A3AD22F9DFDCF960D9B48971 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework */,
+				C34C5BF0133A413065AD7B3FC3133262 /* Pods_GeofenceSetelTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				919887B50E8FE9B8AA3E0B0E1020702C /* Products */,
+				84290B13F33D2CD37B1F83F805184608 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F32889F360B977BE8841138539220275 /* Pods-GeofenceSetelTests */ = {
+			isa = PBXGroup;
+			children = (
+				45B6CB9E2065C94D9F5C76E0118DFB91 /* Pods-GeofenceSetelTests.modulemap */,
+				7EED1DF56DDDD9D60B384C3C00AAA622 /* Pods-GeofenceSetelTests-acknowledgements.markdown */,
+				102FC0CB077EB783AC5E6729C44D1CE1 /* Pods-GeofenceSetelTests-acknowledgements.plist */,
+				7C3E1DAB9337036AAB43C24577DFBDCF /* Pods-GeofenceSetelTests-dummy.m */,
+				31FC69C3433F5C23403DA8E31E5807C6 /* Pods-GeofenceSetelTests-Info.plist */,
+				258D09F57BDDA0A23BEC5E050A420882 /* Pods-GeofenceSetelTests-umbrella.h */,
+				54A46272AA126819B6EA11B3AAE9091C /* Pods-GeofenceSetelTests.debug.xcconfig */,
+				6874CE12091D33AF615318EE5E1DBCB1 /* Pods-GeofenceSetelTests.release.xcconfig */,
+			);
+			name = "Pods-GeofenceSetelTests";
+			path = "Target Support Files/Pods-GeofenceSetelTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3260B155F54A6AE01325ECF3F13AA691 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AEEF7325A911A021640A65DD94D9B8 /* Pods-GeofenceSetel-GeofenceSetelUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C125F8D33C9275266B3FA6290D6EB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2225B1811C3EA2CCE09746E7EF62AAA /* Pods-GeofenceSetelTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3272FDBCFF2CE9AAEB91D4C940BE3D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A215C59F7468297EB3A1D2FD8BFD56 /* Pods-GeofenceSetel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		37392D2AF932B4C8E30A155299B68B45 /* Pods-GeofenceSetel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DBF1E0AA6DA59B35DDD2953E7EDF4FF /* Build configuration list for PBXNativeTarget "Pods-GeofenceSetel" */;
+			buildPhases = (
+				D3272FDBCFF2CE9AAEB91D4C940BE3D1 /* Headers */,
+				5FCC13F528F60BFFDA066536223C2A63 /* Sources */,
+				280DBC9179E33513802C8ACB7B9943B4 /* Frameworks */,
+				6F23AEC9A6296FC8626ADA6B6F994DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GeofenceSetel";
+			productName = "Pods-GeofenceSetel";
+			productReference = 7837CFF3FCB3B60652ED4DC305FBC130 /* Pods_GeofenceSetel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94A134FC435A44FB7F2860E77FD71CCE /* Pods-GeofenceSetelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55276472C9B8C37C723C52920934E1EA /* Build configuration list for PBXNativeTarget "Pods-GeofenceSetelTests" */;
+			buildPhases = (
+				83C125F8D33C9275266B3FA6290D6EB9 /* Headers */,
+				471F70B165B56AAB5317AE9687A0C164 /* Sources */,
+				034E432A076C7F070BE8212ADA6A34D0 /* Frameworks */,
+				C180EBAAF2BFFAD8D40E4E85D4748B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F79F0D1B038B17972BABC49A31A7CC7D /* PBXTargetDependency */,
+			);
+			name = "Pods-GeofenceSetelTests";
+			productName = "Pods-GeofenceSetelTests";
+			productReference = C34C5BF0133A413065AD7B3FC3133262 /* Pods_GeofenceSetelTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C88E428E523ED05B690296C42C7A3917 /* Pods-GeofenceSetel-GeofenceSetelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39886445FAFE7F813B1B70C6E06251E /* Build configuration list for PBXNativeTarget "Pods-GeofenceSetel-GeofenceSetelUITests" */;
+			buildPhases = (
+				3260B155F54A6AE01325ECF3F13AA691 /* Headers */,
+				DFD86E6ED4EA10234B9FED0BD7BEC91E /* Sources */,
+				C2CF855B70A4E9E83B05850197388CD4 /* Frameworks */,
+				7A2AF199620AE0C82E977DA03C68614B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GeofenceSetel-GeofenceSetelUITests";
+			productName = "Pods-GeofenceSetel-GeofenceSetelUITests";
+			productReference = 4537AF29A3AD22F9DFDCF960D9B48971 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 919887B50E8FE9B8AA3E0B0E1020702C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37392D2AF932B4C8E30A155299B68B45 /* Pods-GeofenceSetel */,
+				C88E428E523ED05B690296C42C7A3917 /* Pods-GeofenceSetel-GeofenceSetelUITests */,
+				94A134FC435A44FB7F2860E77FD71CCE /* Pods-GeofenceSetelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F23AEC9A6296FC8626ADA6B6F994DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A2AF199620AE0C82E977DA03C68614B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C180EBAAF2BFFAD8D40E4E85D4748B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		471F70B165B56AAB5317AE9687A0C164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689AA9374937645B242467D61B311761 /* Pods-GeofenceSetelTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCC13F528F60BFFDA066536223C2A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D40975EF1284E73DE8CF10A083118B1 /* Pods-GeofenceSetel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD86E6ED4EA10234B9FED0BD7BEC91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E02B270043468AED122A83C013FD060 /* Pods-GeofenceSetel-GeofenceSetelUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F79F0D1B038B17972BABC49A31A7CC7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GeofenceSetel";
+			target = 37392D2AF932B4C8E30A155299B68B45 /* Pods-GeofenceSetel */;
+			targetProxy = C17C03C7DEA1B66AA139E0984309CF9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08D7151A42B9D2A805224F521AB82BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9133155CE4ED7140AB49117710F0E2C2 /* Pods-GeofenceSetel.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceSetel/Pods-GeofenceSetel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceSetel/Pods-GeofenceSetel.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0E6928B65CE63FE3F570E22E7F6D4AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A46272AA126819B6EA11B3AAE9091C /* Pods-GeofenceSetelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32B27A2F347AA92C0B79FE03CDC7CE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A94ACFDDF3A0792ED3AEDFD61EE77C /* Pods-GeofenceSetel.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceSetel/Pods-GeofenceSetel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceSetel/Pods-GeofenceSetel.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53F385269D39D2A4B2EC8466B8FE0634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6874CE12091D33AF615318EE5E1DBCB1 /* Pods-GeofenceSetelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DDB84B1F9AD5EB211B6D55AAB8197369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B82C1AF86F8FD2208CFD9E67D501E3 /* Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECE071A6FBCEF4802C6C19E2968DE584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FAD0CB43E75B39A4706D3D0987C1E2 /* Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55276472C9B8C37C723C52920934E1EA /* Build configuration list for PBXNativeTarget "Pods-GeofenceSetelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E6928B65CE63FE3F570E22E7F6D4AF1 /* Debug */,
+				53F385269D39D2A4B2EC8466B8FE0634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DBF1E0AA6DA59B35DDD2953E7EDF4FF /* Build configuration list for PBXNativeTarget "Pods-GeofenceSetel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D7151A42B9D2A805224F521AB82BFD /* Debug */,
+				32B27A2F347AA92C0B79FE03CDC7CE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39886445FAFE7F813B1B70C6E06251E /* Build configuration list for PBXNativeTarget "Pods-GeofenceSetel-GeofenceSetelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECE071A6FBCEF4802C6C19E2968DE584 /* Debug */,
+				DDB84B1F9AD5EB211B6D55AAB8197369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

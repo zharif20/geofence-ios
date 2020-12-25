@@ -15,6 +15,9 @@
 		388FFA37259641C300E3E644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388FFA35259641C300E3E644 /* LaunchScreen.storyboard */; };
 		388FFA42259641C400E3E644 /* GeofenceSetelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA41259641C400E3E644 /* GeofenceSetelTests.swift */; };
 		388FFA4D259641C400E3E644 /* GeofenceSetelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA4C259641C400E3E644 /* GeofenceSetelUITests.swift */; };
+		966B96435769C3E0AF78ADDA /* Pods_GeofenceSetel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAF89D63F18473E58A8E8C1 /* Pods_GeofenceSetel.framework */; };
+		9FB4A2E62BE28F45E078B5CA /* Pods_GeofenceSetelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC851489D21B66939A3B053 /* Pods_GeofenceSetelTests.framework */; };
+		E33C7F54F591AAA4FBB52F87 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B207383209F7E8800C683373 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23E7FFA6CE64FE0F705159EB /* Pods-GeofenceSetelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetelTests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		388FFA27259641B900E3E644 /* GeofenceSetel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceSetel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388FFA2A259641B900E3E644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		388FFA2C259641B900E3E644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		388FFA48259641C400E3E644 /* GeofenceSetelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeofenceSetelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		388FFA4C259641C400E3E644 /* GeofenceSetelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceSetelUITests.swift; sourceTree = "<group>"; };
 		388FFA4E259641C400E3E644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38F99C5B33B48178B26DDE3C /* Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		47F3B9BEFFC91AC4B53C097B /* Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4DAF89D63F18473E58A8E8C1 /* Pods_GeofenceSetel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceSetel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC851489D21B66939A3B053 /* Pods_GeofenceSetelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceSetelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B207383209F7E8800C683373 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceSetel_GeofenceSetelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79872BFE1B3B3974645B06C /* Pods-GeofenceSetel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetel.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceSetel/Pods-GeofenceSetel.debug.xcconfig"; sourceTree = "<group>"; };
+		C512A258C3EE8F3762AD0B4D /* Pods-GeofenceSetel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetel.release.xcconfig"; path = "Target Support Files/Pods-GeofenceSetel/Pods-GeofenceSetel.release.xcconfig"; sourceTree = "<group>"; };
+		DD33348091D0E82FB10A0032 /* Pods-GeofenceSetelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetelTests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966B96435769C3E0AF78ADDA /* Pods_GeofenceSetel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB4A2E62BE28F45E078B5CA /* Pods_GeofenceSetelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33C7F54F591AAA4FBB52F87 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				388FFA40259641C400E3E644 /* GeofenceSetelTests */,
 				388FFA4B259641C400E3E644 /* GeofenceSetelUITests */,
 				388FFA28259641B900E3E644 /* Products */,
+				E79B5D2A5A0685DCBDBACA95 /* Pods */,
+				A1218973EA85C1AC45077F0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = GeofenceSetelUITests;
 			sourceTree = "<group>";
 		};
+		A1218973EA85C1AC45077F0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DAF89D63F18473E58A8E8C1 /* Pods_GeofenceSetel.framework */,
+				B207383209F7E8800C683373 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework */,
+				8EC851489D21B66939A3B053 /* Pods_GeofenceSetelTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E79B5D2A5A0685DCBDBACA95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B79872BFE1B3B3974645B06C /* Pods-GeofenceSetel.debug.xcconfig */,
+				C512A258C3EE8F3762AD0B4D /* Pods-GeofenceSetel.release.xcconfig */,
+				38F99C5B33B48178B26DDE3C /* Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig */,
+				47F3B9BEFFC91AC4B53C097B /* Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig */,
+				23E7FFA6CE64FE0F705159EB /* Pods-GeofenceSetelTests.debug.xcconfig */,
+				DD33348091D0E82FB10A0032 /* Pods-GeofenceSetelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 388FFA51259641C400E3E644 /* Build configuration list for PBXNativeTarget "GeofenceSetel" */;
 			buildPhases = (
+				03E933769C651A1927428E48 /* [CP] Check Pods Manifest.lock */,
 				388FFA23259641B900E3E644 /* Sources */,
 				388FFA24259641B900E3E644 /* Frameworks */,
 				388FFA25259641B900E3E644 /* Resources */,
@@ -152,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 388FFA54259641C400E3E644 /* Build configuration list for PBXNativeTarget "GeofenceSetelTests" */;
 			buildPhases = (
+				6C120DB94C74857B3A0EFA3E /* [CP] Check Pods Manifest.lock */,
 				388FFA39259641C400E3E644 /* Sources */,
 				388FFA3A259641C400E3E644 /* Frameworks */,
 				388FFA3B259641C400E3E644 /* Resources */,
@@ -170,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 388FFA57259641C400E3E644 /* Build configuration list for PBXNativeTarget "GeofenceSetelUITests" */;
 			buildPhases = (
+				CBF7E36D48D6BF49F1441E8D /* [CP] Check Pods Manifest.lock */,
 				388FFA44259641C400E3E644 /* Sources */,
 				388FFA45259641C400E3E644 /* Frameworks */,
 				388FFA46259641C400E3E644 /* Resources */,
@@ -252,6 +295,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E933769C651A1927428E48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeofenceSetel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C120DB94C74857B3A0EFA3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeofenceSetelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF7E36D48D6BF49F1441E8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeofenceSetel-GeofenceSetelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		388FFA23259641B900E3E644 /* Sources */ = {
@@ -366,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +545,7 @@
 		};
 		388FFA52259641C400E3E644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79872BFE1B3B3974645B06C /* Pods-GeofenceSetel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +565,7 @@
 		};
 		388FFA53259641C400E3E644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C512A258C3EE8F3762AD0B4D /* Pods-GeofenceSetel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +585,7 @@
 		};
 		388FFA55259641C400E3E644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E7FFA6CE64FE0F705159EB /* Pods-GeofenceSetelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +608,7 @@
 		};
 		388FFA56259641C400E3E644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD33348091D0E82FB10A0032 /* Pods-GeofenceSetelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +631,7 @@
 		};
 		388FFA58259641C400E3E644 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F99C5B33B48178B26DDE3C /* Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +652,7 @@
 		};
 		388FFA59259641C400E3E644 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F3B9BEFFC91AC4B53C097B /* Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
