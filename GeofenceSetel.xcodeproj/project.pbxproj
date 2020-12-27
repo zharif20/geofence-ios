@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		388FFA37259641C300E3E644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388FFA35259641C300E3E644 /* LaunchScreen.storyboard */; };
 		388FFA42259641C400E3E644 /* GeofenceSetelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA41259641C400E3E644 /* GeofenceSetelTests.swift */; };
 		388FFA4D259641C400E3E644 /* GeofenceSetelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA4C259641C400E3E644 /* GeofenceSetelUITests.swift */; };
+		388FFA9A259874E900E3E644 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA99259874E900E3E644 /* LocationManager.swift */; };
 		966B96435769C3E0AF78ADDA /* Pods_GeofenceSetel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAF89D63F18473E58A8E8C1 /* Pods_GeofenceSetel.framework */; };
 		9FB4A2E62BE28F45E078B5CA /* Pods_GeofenceSetelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC851489D21B66939A3B053 /* Pods_GeofenceSetelTests.framework */; };
 		E33C7F54F591AAA4FBB52F87 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B207383209F7E8800C683373 /* Pods_GeofenceSetel_GeofenceSetelUITests.framework */; };
@@ -53,6 +54,7 @@
 		388FFA48259641C400E3E644 /* GeofenceSetelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeofenceSetelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		388FFA4C259641C400E3E644 /* GeofenceSetelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceSetelUITests.swift; sourceTree = "<group>"; };
 		388FFA4E259641C400E3E644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388FFA99259874E900E3E644 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		38F99C5B33B48178B26DDE3C /* Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		47F3B9BEFFC91AC4B53C097B /* Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig"; path = "Target Support Files/Pods-GeofenceSetel-GeofenceSetelUITests/Pods-GeofenceSetel-GeofenceSetelUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4DAF89D63F18473E58A8E8C1 /* Pods_GeofenceSetel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceSetel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 		388FFA29259641B900E3E644 /* GeofenceSetel */ = {
 			isa = PBXGroup;
 			children = (
+				388FFA98259874D900E3E644 /* Manager */,
 				388FFA2A259641B900E3E644 /* AppDelegate.swift */,
 				388FFA2C259641B900E3E644 /* SceneDelegate.swift */,
 				388FFA2E259641B900E3E644 /* ViewController.swift */,
@@ -143,6 +146,14 @@
 				388FFA4E259641C400E3E644 /* Info.plist */,
 			);
 			path = GeofenceSetelUITests;
+			sourceTree = "<group>";
+		};
+		388FFA98259874D900E3E644 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				388FFA99259874E900E3E644 /* LocationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		A1218973EA85C1AC45077F0F /* Frameworks */ = {
@@ -406,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388FFA9A259874E900E3E644 /* LocationManager.swift in Sources */,
 				388FFA2F259641B900E3E644 /* ViewController.swift in Sources */,
 				388FFA2B259641B900E3E644 /* AppDelegate.swift in Sources */,
 				388FFA2D259641B900E3E644 /* SceneDelegate.swift in Sources */,
@@ -514,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -569,7 +581,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
