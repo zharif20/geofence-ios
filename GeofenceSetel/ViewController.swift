@@ -36,14 +36,9 @@ class ViewController: UIViewController {
     }
     
     // MARK -: Functions
-    func region(geofence: GeofenceModel) -> CLCircularRegion {
-        let region = CLCircularRegion(center: geofence.coordinate, radius: geofence.radius, identifier: geofence.identifier)
-        
-        region.notifyOnEntry = geofence.positionType == .inside
-        region.notifyOnExit = !region.notifyOnEntry
-        return region
-    }
 
+
+    
 
     // MARK -: Action
     
