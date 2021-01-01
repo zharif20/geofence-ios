@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 
 protocol LocationManagerDelegate: class {
-    
+    func changeAuthorization(manager: CLLocationManager, status: CLAuthorizationStatus)
 }
 
 class LocationManager: NSObject {
@@ -36,9 +36,6 @@ class LocationManager: NSObject {
 }
 
 extension LocationManager: CLLocationManagerDelegate {
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        
-    }
     
     func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
         
@@ -54,5 +51,9 @@ extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        delegate?.changeAuthorization(manager: manager, status: status)
     }
 }

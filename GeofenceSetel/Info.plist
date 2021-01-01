@@ -62,5 +62,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>GeofenceSetel requires constant access to your phone’s location to notify when you enter or leave a geofence.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>GeofenceSetel requires constant access to your phone’s location to notify when you enter or leave a geofence.</string>
 </dict>
 </plist>

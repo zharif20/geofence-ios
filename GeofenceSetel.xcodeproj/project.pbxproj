@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		386728C3259F6B5300EBAF16 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386728C2259F6B5300EBAF16 /* MKMapView+Extension.swift */; };
 		388FFA2B259641B900E3E644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA2A259641B900E3E644 /* AppDelegate.swift */; };
 		388FFA2D259641B900E3E644 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA2C259641B900E3E644 /* SceneDelegate.swift */; };
 		388FFA2F259641B900E3E644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA2E259641B900E3E644 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		23E7FFA6CE64FE0F705159EB /* Pods-GeofenceSetelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetelTests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		386728C2259F6B5300EBAF16 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
 		388FFA27259641B900E3E644 /* GeofenceSetel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceSetel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388FFA2A259641B900E3E644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		388FFA2C259641B900E3E644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		386728C1259F6B3A00EBAF16 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				386728C2259F6B5300EBAF16 /* MKMapView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		388FFA1E259641B900E3E644 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		388FFA29259641B900E3E644 /* GeofenceSetel */ = {
 			isa = PBXGroup;
 			children = (
+				386728C1259F6B3A00EBAF16 /* Extension */,
 				388FFA98259874D900E3E644 /* Manager */,
 				388FFA2A259641B900E3E644 /* AppDelegate.swift */,
 				388FFA2C259641B900E3E644 /* SceneDelegate.swift */,
@@ -420,6 +431,7 @@
 				388FFA9A259874E900E3E644 /* LocationManager.swift in Sources */,
 				388FFA2F259641B900E3E644 /* ViewController.swift in Sources */,
 				388FFA2B259641B900E3E644 /* AppDelegate.swift in Sources */,
+				386728C3259F6B5300EBAF16 /* MKMapView+Extension.swift in Sources */,
 				388FFA2D259641B900E3E644 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

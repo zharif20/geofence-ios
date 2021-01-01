@@ -30,7 +30,16 @@
                             <constraint firstItem="KeJ-7K-1e2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ySq-57-lC6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Xzt-JN-Sis"/>
+                    <navigationItem key="navigationItem" id="Xzt-JN-Sis">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="DCw-C3-cVp">
+                            <connections>
+                                <action selector="zoomToLocation:" destination="BYZ-38-t0r" id="7gk-0v-3dR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="KeJ-7K-1e2" id="Tsb-gS-FXa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
