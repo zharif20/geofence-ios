@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		386728C3259F6B5300EBAF16 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386728C2259F6B5300EBAF16 /* MKMapView+Extension.swift */; };
+		386728CB259F7FB200EBAF16 /* GeofenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386728CA259F7FB200EBAF16 /* GeofenceModel.swift */; };
 		388FFA2B259641B900E3E644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA2A259641B900E3E644 /* AppDelegate.swift */; };
 		388FFA2D259641B900E3E644 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA2C259641B900E3E644 /* SceneDelegate.swift */; };
 		388FFA2F259641B900E3E644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FFA2E259641B900E3E644 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		23E7FFA6CE64FE0F705159EB /* Pods-GeofenceSetelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceSetelTests.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceSetelTests/Pods-GeofenceSetelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		386728C2259F6B5300EBAF16 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
+		386728CA259F7FB200EBAF16 /* GeofenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceModel.swift; sourceTree = "<group>"; };
 		388FFA27259641B900E3E644 /* GeofenceSetel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceSetel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388FFA2A259641B900E3E644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		388FFA2C259641B900E3E644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				388FFA2A259641B900E3E644 /* AppDelegate.swift */,
 				388FFA2C259641B900E3E644 /* SceneDelegate.swift */,
 				388FFA2E259641B900E3E644 /* ViewController.swift */,
+				386728CA259F7FB200EBAF16 /* GeofenceModel.swift */,
 				388FFA30259641B900E3E644 /* Main.storyboard */,
 				388FFA33259641C300E3E644 /* Assets.xcassets */,
 				388FFA35259641C300E3E644 /* LaunchScreen.storyboard */,
@@ -431,6 +434,7 @@
 				388FFA9A259874E900E3E644 /* LocationManager.swift in Sources */,
 				388FFA2F259641B900E3E644 /* ViewController.swift in Sources */,
 				388FFA2B259641B900E3E644 /* AppDelegate.swift in Sources */,
+				386728CB259F7FB200EBAF16 /* GeofenceModel.swift in Sources */,
 				386728C3259F6B5300EBAF16 /* MKMapView+Extension.swift in Sources */,
 				388FFA2D259641B900E3E644 /* SceneDelegate.swift in Sources */,
 			);
