@@ -14,6 +14,7 @@ extension MKMapView {
         guard let coordinate = userLocation.location?.coordinate else { return }
         let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
         setRegion(region, animated: true)
+        addOverlay(MKCircle(center: coordinate, radius: 100))
     }
     
 }

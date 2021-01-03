@@ -33,6 +33,8 @@ class ViewController: UIViewController {
 
         locationManager = LocationManager()
         locationManager?.delegate = self
+        
+        mapView.delegate = self
     }
     
     // MARK -: Functions
@@ -44,6 +46,19 @@ class ViewController: UIViewController {
     
     @IBAction func zoomToLocation(_ sender: Any) {
         mapView.zoomToCurrentLocation()
+    }
+}
+
+extension ViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if overlay is MKCircle {
+            let circleRender = MKCircleRenderer(overlay: overlay)
+            circleRender.lineWidth = 1.0
+            circleRender.strokeColor = .red
+            circleRender.fillColor = UIColor.red.withAlphaComponent(0.4)
+            return circleRender
+        }
+        return MKOverlayRenderer(overlay: overlay)
     }
 }
 

@@ -7,6 +7,8 @@
 
 import Foundation
 import CoreLocation
+import UIKit
+import MapKit
 
 protocol LocationManagerDelegate: class {
     func changeAuthorization(manager: CLLocationManager, status: CLAuthorizationStatus)
@@ -16,6 +18,8 @@ class LocationManager: NSObject {
     
     var locationManager:CLLocationManager!
     var delegate:LocationManagerDelegate? = nil
+    var geofences: [GeofenceModel] = []
+    var mapView: MKMapView?
     
     static let sharedInstance = LocationManager()
     
@@ -65,20 +69,48 @@ class LocationManager: NSObject {
         }
     }
     
+    func addGeofence(with viewController: UIViewController, coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, positionType: GeofenceModel.PositionType) {
+        viewController.dismiss(animated: true) { [weak self] in
+            guard let strongSelf = self else { return }
+            let clampedRadius = min(radius, strongSelf.locationManager.maximumRegionMonitoringDistance)
+            let geo = GeofenceModel(coordinate: coordinate, radius: clampedRadius, identifier: identifier, positionType: positionType)
+            strongSelf.addGeofence(geofence: geo)
+            strongSelf.startMonitoring(geofence: geo)
+            // saveallgeofence
+        }
+    }
+    
+    func addGeofence(geofence: GeofenceModel) {
+        geofences.append(geofence)
+//        mapView?.addAnnotation(<#T##annotation: MKAnnotation##MKAnnotation#>)
+    }
+    
+    func updateGeofenceCount(completion: () -> Void) {
+        
+    }
+    
 }
 
 extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
-        
+        print("Monitoring failed for identifier: \(region?.identifier ?? "") with error: \(error.localizedDescription)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Location failed with error: \(error)")
     }
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        
+        if region is CLCircularRegion {
+            
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        
+        if region is CLCircularRegion {
+            
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
