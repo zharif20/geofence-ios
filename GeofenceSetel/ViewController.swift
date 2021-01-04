@@ -35,13 +35,32 @@ class ViewController: UIViewController {
         locationManager?.delegate = self
         
         mapView.delegate = self
+        
+        let longTapGesture = UILongPressGestureRecognizer(target: self, action: #selector(addGeofence))
+            mapView.addGestureRecognizer(longTapGesture)
     }
     
     // MARK -: Functions
-
-
+    @objc func addGeofence(sender: UIGestureRecognizer){
+        if sender.state == .began {
+            let locationInView = sender.location(in: mapView)
+            let locationOnMap = mapView.convert(locationInView, toCoordinateFrom: mapView)
+            addAnnotation(location: locationOnMap)
+        }
+    }
     
-
+    func addAnnotation(location: CLLocationCoordinate2D){
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "New Area"
+        annotation.subtitle = "Get inside"
+        
+        let identifier = NSUUID().uuidString
+        let geofence = GeofenceModel(coordinate: location, radius: 100, identifier: identifier, positionType: .inside)
+        locationManager?.configureGeofence(with: geofence)
+        mapView.addAnnotation(annotation)
+    }
+    
     // MARK -: Action
     
     @IBAction func zoomToLocation(_ sender: Any) {
@@ -60,10 +79,58 @@ extension ViewController: MKMapViewDelegate {
         }
         return MKOverlayRenderer(overlay: overlay)
     }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard annotation is GeofenceModel else { return nil }
+
+        let mapIdentifier = "geofenceId"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: mapIdentifier) as? MKPinAnnotationView
+        
+        if let annotationView = annotationView {
+            annotationView.annotation = annotation
+        } else {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: mapIdentifier)
+            annotationView?.canShowCallout = true
+            annotationView?.leftCalloutAccessoryView = UIButton(type: .close)
+            annotationView?.pinTintColor = .black
+        }
+        return annotationView
+    }
+
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        print("tapped on pin ")
+    }
+
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.leftCalloutAccessoryView {
+            print("_____anno: \(view.annotation)")
+            guard let geofence = view.annotation as? GeofenceModel else { return }
+            locationManager?.removeGeofence(remove: geofence)
+        }
+    }
 }
 
 extension ViewController: LocationManagerDelegate {
     func changeAuthorization(manager: CLLocationManager, status: CLAuthorizationStatus) {
         mapView.showsUserLocation = (status == .authorizedAlways || status == .authorizedWhenInUse)
+    }
+    
+    func addRadiusOverlay(geofence: GeofenceModel) {
+        mapView.addAnnotation(geofence)
+        mapView.addOverlay(MKCircle(center: geofence.coordinate, radius: geofence.radius))
+    }
+    
+    func removeRadiusOverlay(geofence: GeofenceModel) {
+        mapView.removeAnnotation(geofence )
+
+        guard let overlays = mapView?.overlays else { return }
+        for overlay in overlays {
+            guard let circleOverlay = overlay as? MKCircle else { continue }
+            let coord = circleOverlay.coordinate
+            if coord.latitude == geofence.coordinate.latitude && coord.longitude == geofence.coordinate.longitude && circleOverlay.radius == geofence.radius {
+                mapView?.removeOverlay(circleOverlay)
+              break
+            }
+        }
     }
 }

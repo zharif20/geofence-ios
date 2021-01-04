@@ -12,6 +12,8 @@ import MapKit
 
 protocol LocationManagerDelegate: class {
     func changeAuthorization(manager: CLLocationManager, status: CLAuthorizationStatus)
+    func addRadiusOverlay(geofence: GeofenceModel)
+    func removeRadiusOverlay(geofence: GeofenceModel)
 }
 
 class LocationManager: NSObject {
@@ -69,20 +71,23 @@ class LocationManager: NSObject {
         }
     }
     
-    func addGeofence(with viewController: UIViewController, coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, positionType: GeofenceModel.PositionType) {
-        viewController.dismiss(animated: true) { [weak self] in
-            guard let strongSelf = self else { return }
-            let clampedRadius = min(radius, strongSelf.locationManager.maximumRegionMonitoringDistance)
-            let geo = GeofenceModel(coordinate: coordinate, radius: clampedRadius, identifier: identifier, positionType: positionType)
-            strongSelf.addGeofence(geofence: geo)
-            strongSelf.startMonitoring(geofence: geo)
-            // saveallgeofence
-        }
+    func configureGeofence(with geofence: GeofenceModel) {
+        let clampedRadius = min(geofence.radius, locationManager.maximumRegionMonitoringDistance)
+        let geo = GeofenceModel(coordinate: geofence.coordinate, radius: clampedRadius, identifier: geofence.identifier, positionType: geofence.positionType)
+        addGeofence(add: geo)
+        startMonitoring(geofence: geo)
+        // saveallgeofence
     }
     
-    func addGeofence(geofence: GeofenceModel) {
+    func addGeofence(add geofence: GeofenceModel) {
         geofences.append(geofence)
-//        mapView?.addAnnotation(<#T##annotation: MKAnnotation##MKAnnotation#>)
+        delegate?.addRadiusOverlay(geofence: geofence)
+    }
+    
+    func removeGeofence(remove geofence: GeofenceModel) {
+//      guard let index = geotifications.index(of: geotification) else { return }
+//      geotifications.remove(at: index)
+        delegate?.removeRadiusOverlay(geofence: geofence)
     }
     
     func updateGeofenceCount(completion: () -> Void) {

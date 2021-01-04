@@ -31,9 +31,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xzt-JN-Sis">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="DCw-C3-cVp">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="DCw-C3-cVp">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="zoomToLocation:" destination="BYZ-38-t0r" id="7gk-0v-3dR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wh0-3F-moD">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addGeofenceArea:" destination="BYZ-38-t0r" id="6dj-Xg-BXA"/>
+                                <segue destination="xdC-is-wAL" kind="presentation" id="ATx-9z-Yo9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -62,6 +70,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKN-6G-qIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="69.565217391304358" y="63.616071428571423"/>
+        </scene>
+        <!--Configure Geofence Area-->
+        <scene sceneID="Irc-ic-opG">
+            <objects>
+                <tableViewController id="dim-Zq-ULd" customClass="ConfigureGeofenceArea" customModule="GeofenceSetel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O0V-5S-mBU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="4y6-ou-Dw3">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="300" id="wIq-xm-54d">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wIq-xm-54d" id="xG2-hX-qQQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CKO-Qb-Wli">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="250" id="81H-Ts-Sbl"/>
+                                                    </constraints>
+                                                </mapView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CKO-Qb-Wli" firstAttribute="leading" secondItem="xG2-hX-qQQ" secondAttribute="leading" id="Cik-O3-Xxw"/>
+                                                <constraint firstItem="CKO-Qb-Wli" firstAttribute="top" secondItem="xG2-hX-qQQ" secondAttribute="top" id="fAz-Kb-SeV"/>
+                                                <constraint firstItem="CKO-Qb-Wli" firstAttribute="centerX" secondItem="xG2-hX-qQQ" secondAttribute="centerX" id="z0v-ru-Zjb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="dim-Zq-ULd" id="7pe-Et-F2X"/>
+                            <outlet property="delegate" destination="dim-Zq-ULd" id="J9o-1M-JCv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="KEB-aQ-HX6">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gdV-cT-luW">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="close:" destination="dim-Zq-ULd" id="qhP-HT-L8h"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="done" id="AXv-g9-WWl">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="addGeofence:" destination="dim-Zq-ULd" id="Z02-DB-ahj"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="wNO-wf-Svi">
+                                <connections>
+                                    <action selector="zoomToCurrentLocation:" destination="dim-Zq-ULd" id="Vjr-ti-L2X"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="CKO-Qb-Wli" id="jNm-us-Efs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4K-fB-Beu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2834.7826086956525" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gww-F3-RDK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xdC-is-wAL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mho-Zp-cRz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dim-Zq-ULd" kind="relationship" relationship="rootViewController" id="jaF-cj-UpP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLZ-dP-sX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924.6376811594205" y="63.616071428571423"/>
         </scene>
     </scenes>
     <resources>
