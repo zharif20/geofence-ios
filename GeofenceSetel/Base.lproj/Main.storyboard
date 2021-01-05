@@ -40,8 +40,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wh0-3F-moD">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="addGeofenceArea:" destination="BYZ-38-t0r" id="6dj-Xg-BXA"/>
-                                <segue destination="xdC-is-wAL" kind="presentation" id="ATx-9z-Yo9"/>
+                                <action selector="wifiSetup:" destination="BYZ-38-t0r" id="Cmt-8o-jiK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,7 +75,7 @@
             <objects>
                 <tableViewController id="dim-Zq-ULd" customClass="ConfigureGeofenceArea" customModule="GeofenceSetel" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O0V-5S-mBU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -147,7 +146,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xdC-is-wAL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mho-Zp-cRz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

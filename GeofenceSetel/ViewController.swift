@@ -66,6 +66,31 @@ class ViewController: UIViewController {
     @IBAction func zoomToLocation(_ sender: Any) {
         mapView.zoomToCurrentLocation()
     }
+    
+    @IBAction func wifiSetup(_ sender: Any) {
+        let alert = UIAlertController(title: "WIFI", message: "Please add SSID and BSSID", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Input SSID.."
+        })
+        
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Input BSSID.."
+        })
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+   
+            let ssidAlert = alert.textFields?[0].text
+            let bssidAlert = alert.textFields?[1].text
+            
+            UserDefaults.standard.set(ssidAlert, forKey: "SSID")
+            UserDefaults.standard.set(bssidAlert, forKey: "BSSID")
+ 
+        }))
+        
+        present(alert, animated: true)
+    }
 }
 
 extension ViewController: MKMapViewDelegate {
@@ -98,12 +123,10 @@ extension ViewController: MKMapViewDelegate {
     }
 
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        print("tapped on pin ")
     }
 
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if control == view.leftCalloutAccessoryView {
-            print("_____anno: \(view.annotation)")
             guard let geofence = view.annotation as? GeofenceModel else { return }
             locationManager?.removeGeofence(remove: geofence)
         }
