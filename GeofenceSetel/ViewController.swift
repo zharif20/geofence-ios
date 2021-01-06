@@ -33,6 +33,7 @@ class ViewController: UIViewController {
 
         locationManager = LocationManager()
         locationManager?.delegate = self
+        locationManager?.loadAllGeotifications()
         
         mapView.delegate = self
         

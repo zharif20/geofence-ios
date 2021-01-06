@@ -38,7 +38,7 @@ class LocationManager: NSObject {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }
     
@@ -57,8 +57,7 @@ class LocationManager: NSObject {
             return
         }
         
-        if CLLocationManager.authorizationStatus() != .authorizedAlways ||
-            CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
+        if CLLocationManager.authorizationStatus() != .authorizedAlways {
             delegate?.showError(title: "Error", message: "Permission to access location is needed")
             return
         }
@@ -79,7 +78,7 @@ class LocationManager: NSObject {
         let geo = GeofenceModel(coordinate: geofence.coordinate, radius: clampedRadius, identifier: geofence.identifier, areaName: geofence.areaName)
         addGeofence(add: geo)
         startMonitoring(geofence: geo)
-        // saveallgeofence
+        saveAllGeotifications()
     }
     
     func addGeofence(add geofence: GeofenceModel) {
@@ -88,15 +87,27 @@ class LocationManager: NSObject {
     }
     
     func removeGeofence(remove geofence: GeofenceModel) {
-//      guard let index = geotifications.index(of: geotification) else { return }
-//      geotifications.remove(at: index)
+        guard let index = geofences.firstIndex(of: geofence) else { return }
+        geofences.remove(at: index)
         delegate?.removeRadiusOverlay(geofence: geofence)
     }
     
-    func updateGeofenceCount(completion: () -> Void) {
-        
+    // MARK: Loading and saving functions
+    func loadAllGeotifications() {
+        geofences.removeAll()
+        let allGeotifications = GeofenceModel.allGeotifications()
+        allGeotifications.forEach { addGeofence(add: $0) }
     }
     
+    func saveAllGeotifications() {
+        let encoder = JSONEncoder()
+        do {
+            let data = try encoder.encode(geofences)
+            UserDefaults.standard.set(data, forKey: PreferencesKeys.savedItems)
+        } catch {
+            print("error encoding geotifications")
+        }
+    }
 }
 
 extension LocationManager: CLLocationManagerDelegate {

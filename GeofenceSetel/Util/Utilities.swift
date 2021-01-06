@@ -35,14 +35,11 @@ class Utilities {
         var isWifiAvailable = false
         if getWifiInfo().count > 0 {
             getWifiInfo().forEach({
-                
                 if ($0.bssid == UserDefaults.standard.string(forKey: "BSSID") || $0.ssid == UserDefaults.standard.string(forKey: "SSID")) {
                     isWifiAvailable = true
                 } else {
                     isWifiAvailable = false
-                    
                 }
-                
             })
         }
         return isWifiAvailable

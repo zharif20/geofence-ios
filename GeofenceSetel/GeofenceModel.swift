@@ -57,3 +57,18 @@ class GeofenceModel: NSObject, Codable, MKAnnotation {
         try container.encode(areaName, forKey: .areaName)
     }
 }
+
+extension GeofenceModel {
+    public class func allGeotifications() -> [GeofenceModel] {
+        guard let savedData = UserDefaults.standard.data(forKey: PreferencesKeys.savedItems) else { return [] }
+        let decoder = JSONDecoder()
+        if let savedGeotifications = try? decoder.decode(Array.self, from: savedData) as [GeofenceModel] {
+            return savedGeotifications
+        }
+        return []
+    }
+}
+
+struct PreferencesKeys {
+  static let savedItems = "savedItems"
+}
