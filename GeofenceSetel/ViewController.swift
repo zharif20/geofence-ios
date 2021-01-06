@@ -50,15 +50,25 @@ class ViewController: UIViewController {
     }
     
     func addAnnotation(location: CLLocationCoordinate2D){
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = location
-        annotation.title = "New Area"
-        annotation.subtitle = "Get inside"
+        let long = location.longitude
+        let lat = location.latitude
         
-        let identifier = NSUUID().uuidString
-        let geofence = GeofenceModel(coordinate: location, radius: 100, identifier: identifier, positionType: .inside)
-        locationManager?.configureGeofence(with: geofence)
-        mapView.addAnnotation(annotation)
+        let alert = UIAlertController(title: "Configure Area", message: "Please enter region name \n\n lat : \(lat) \n long:\(long)", preferredStyle: .alert)
+        
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Input Area Name.."
+        })
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] action in
+            guard let strongSelf = self else { return }
+            let title = alert.textFields?[0].text
+
+            let identifier = NSUUID().uuidString
+            let geofence = GeofenceModel(coordinate: location, radius: 100, identifier: identifier, areaName: title)
+            strongSelf.locationManager?.configureGeofence(with: geofence)
+        }))
+        
+        present(alert, animated: true)
     }
     
     // MARK -: Action
@@ -155,5 +165,19 @@ extension ViewController: LocationManagerDelegate {
               break
             }
         }
+    }
+    
+    func locationInsideGeofence() {
+        self.title = "Inside"
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+    }
+    
+    func locationOutsideGeofence() {
+        self.title = "Outside"
+        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+    }
+    
+    func showError(title: String, message: String) {
+        showAlert(title: title, message: message)
     }
 }

@@ -12,8 +12,11 @@ import MapKit
 
 protocol LocationManagerDelegate: class {
     func changeAuthorization(manager: CLLocationManager, status: CLAuthorizationStatus)
+    func locationOutsideGeofence()
+    func locationInsideGeofence()
     func addRadiusOverlay(geofence: GeofenceModel)
     func removeRadiusOverlay(geofence: GeofenceModel)
+    func showError(title: String, message: String)
 }
 
 class LocationManager: NSObject {
@@ -42,7 +45,7 @@ class LocationManager: NSObject {
     func region(geofence: GeofenceModel) -> CLCircularRegion {
         let region = CLCircularRegion(center: geofence.coordinate, radius: geofence.radius, identifier: geofence.identifier)
         
-        region.notifyOnEntry = geofence.positionType == .inside
+        region.notifyOnEntry = true
         region.notifyOnExit = !region.notifyOnEntry
         return region
     }
@@ -50,13 +53,13 @@ class LocationManager: NSObject {
     // Monitor geofence when user add
     func startMonitoring(geofence: GeofenceModel) {
         if !CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
-//            showAlert(title: "Error", message: "Geofence is not supported by this device")
+            delegate?.showError(title: "Error", message: "Geofence is not supported by this device")
             return
         }
         
         if CLLocationManager.authorizationStatus() != .authorizedAlways ||
             CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
-//            showAlert(title: "Error", message: "Permission to access location is needed")
+            delegate?.showError(title: "Error", message: "Permission to access location is needed")
             return
         }
         
@@ -73,7 +76,7 @@ class LocationManager: NSObject {
     
     func configureGeofence(with geofence: GeofenceModel) {
         let clampedRadius = min(geofence.radius, locationManager.maximumRegionMonitoringDistance)
-        let geo = GeofenceModel(coordinate: geofence.coordinate, radius: clampedRadius, identifier: geofence.identifier, positionType: geofence.positionType)
+        let geo = GeofenceModel(coordinate: geofence.coordinate, radius: clampedRadius, identifier: geofence.identifier, areaName: geofence.areaName)
         addGeofence(add: geo)
         startMonitoring(geofence: geo)
         // saveallgeofence
@@ -119,7 +122,16 @@ extension LocationManager: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        // check wifi and region logic        
+        if !Utilities.sharedInstance.hasWifi() && locationManager.monitoredRegions.count == 0 { // no wifi and outside region
+            // status should be outside
+            delegate?.locationOutsideGeofence()
+            
+        } else if Utilities.sharedInstance.hasWifi() { // got wifi
+            delegate?.locationInsideGeofence()
+        } else { // no wifi but still inside region
+            delegate?.locationInsideGeofence()
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
