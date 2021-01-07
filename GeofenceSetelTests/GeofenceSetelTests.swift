@@ -6,9 +6,12 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import GeofenceSetel
 
 class GeofenceSetelTests: XCTestCase {
+
+    fileprivate var viewController: ViewController!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -28,6 +31,14 @@ class GeofenceSetelTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testLocationManager() {
+        XCTAssertNotNil(viewController.locationManager?.locationManager)
+    }
+    
+    func testLocationServicesEnabled() {
+        XCTAssertTrue(CLLocationManager.locationServicesEnabled())
     }
 
 }

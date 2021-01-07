@@ -8,13 +8,13 @@
 // - Detect if device is located inside geofence area
 
 // Geofence area: -
-// geographic point
-// radius
-// specific wifi name
+// geographic point == done
+// radius == done
+// specific wifi name == done
 
-// Device consider to be inside geofence area if within circle or connected to specific wifi
-// If the device located outside the zone, but still connected to specific wifi, then device is being treated as within the geofence area
-// Able to configure geofence area and display current status (inside or outside)
+// Device consider to be inside geofence area if within circle or connected to specific wifi == done
+// If the device located outside the zone, but still connected to specific wifi, then device is being treated as within the geofence area == done
+// Able to configure geofence area and display current status (inside or outside) == done
 
 //Grant access to engineering@setel.my
 
@@ -146,7 +146,7 @@ extension ViewController: MKMapViewDelegate {
 
 extension ViewController: LocationManagerDelegate {
     func changeAuthorization(manager: CLLocationManager, status: CLAuthorizationStatus) {
-        mapView.showsUserLocation = (status == .authorizedAlways || status == .authorizedWhenInUse)
+        mapView.showsUserLocation = (status == .authorizedAlways)
     }
     
     func addRadiusOverlay(geofence: GeofenceModel) {
