@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		383E15B425A4DA060076899E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383E15B325A4DA060076899E /* Utilities.swift */; };
 		383E15BD25A4DA7B0076899E /* WifiDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383E15BC25A4DA7B0076899E /* WifiDetails.swift */; };
+		383E15DB25AB0D8E0076899E /* mapstogpx20210110_102459.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 383E15DA25AB0D8E0076899E /* mapstogpx20210110_102459.gpx */; };
 		386728C3259F6B5300EBAF16 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386728C2259F6B5300EBAF16 /* MKMapView+Extension.swift */; };
 		386728CB259F7FB200EBAF16 /* GeofenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386728CA259F7FB200EBAF16 /* GeofenceModel.swift */; };
 		386728D0259F83F200EBAF16 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386728CF259F83F200EBAF16 /* UIViewController+extension.swift */; };
@@ -48,6 +49,7 @@
 		383E15B325A4DA060076899E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		383E15BC25A4DA7B0076899E /* WifiDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiDetails.swift; sourceTree = "<group>"; };
 		383E15CE25A782F00076899E /* GeofenceSetel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeofenceSetel.entitlements; sourceTree = "<group>"; };
+		383E15DA25AB0D8E0076899E /* mapstogpx20210110_102459.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mapstogpx20210110_102459.gpx; path = ../../Downloads/mapstogpx20210110_102459.gpx; sourceTree = "<group>"; };
 		386728C2259F6B5300EBAF16 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
 		386728CA259F7FB200EBAF16 /* GeofenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceModel.swift; sourceTree = "<group>"; };
 		386728CF259F83F200EBAF16 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		388FFA1E259641B900E3E644 = {
 			isa = PBXGroup;
 			children = (
+				383E15DA25AB0D8E0076899E /* mapstogpx20210110_102459.gpx */,
 				388FFA29259641B900E3E644 /* GeofenceSetel */,
 				388FFA40259641C400E3E644 /* GeofenceSetelTests */,
 				388FFA4B259641C400E3E644 /* GeofenceSetelUITests */,
@@ -331,6 +334,7 @@
 				388FFA37259641C300E3E644 /* LaunchScreen.storyboard in Resources */,
 				388FFA34259641C300E3E644 /* Assets.xcassets in Resources */,
 				388FFA32259641B900E3E644 /* Main.storyboard in Resources */,
+				383E15DB25AB0D8E0076899E /* mapstogpx20210110_102459.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +649,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GeofenceSetel/GeofenceSetel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Y6UT6A87VB;
 				INFOPLIST_FILE = GeofenceSetel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,7 +670,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GeofenceSetel/GeofenceSetel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Y6UT6A87VB;
 				INFOPLIST_FILE = GeofenceSetel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xzt-JN-Sis">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="DCw-C3-cVp">
+                        <barButtonItem key="leftBarButtonItem" image="CurrentLocation" style="plain" id="DCw-C3-cVp">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="zoomToLocation:" destination="BYZ-38-t0r" id="7gk-0v-3dR"/>
@@ -72,6 +72,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CurrentLocation" width="15" height="15"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
