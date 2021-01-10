@@ -79,25 +79,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func wifiSetup(_ sender: Any) {
-        let alert = UIAlertController(title: "WIFI", message: "Please add SSID and BSSID", preferredStyle: .alert)
+        let alert = UIAlertController(title: "WIFI", message: "Please add SSID", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         alert.addTextField(configurationHandler: { textField in
             textField.placeholder = "Input SSID.."
         })
         
-        alert.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Input BSSID.."
-        })
-        
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
    
             let ssidAlert = alert.textFields?[0].text
-            let bssidAlert = alert.textFields?[1].text
-            
             UserDefaults.standard.set(ssidAlert, forKey: "SSID")
-            UserDefaults.standard.set(bssidAlert, forKey: "BSSID")
- 
         }))
         
         present(alert, animated: true)

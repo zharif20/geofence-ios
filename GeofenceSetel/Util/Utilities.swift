@@ -13,20 +13,12 @@ class Utilities {
     static let sharedInstance = Utilities()
     
     func getWifiInfo() -> Array<WifiDetails> {
-        guard let interfaceNames = CNCopySupportedInterfaces() as? [String] else {
-            return []
-        }
+        guard let interfaceNames = CNCopySupportedInterfaces() as? [String] else { return [] }
+        
         let wifiInfo:[WifiDetails] = interfaceNames.compactMap{ name in
-            guard let info = CNCopyCurrentNetworkInfo(name as CFString) as? [String:AnyObject] else {
-                return nil
-            }
-            guard let ssid = info[kCNNetworkInfoKeySSID as String] as? String else {
-                return nil
-            }
-            guard let bssid = info[kCNNetworkInfoKeyBSSID as String] as? String else {
-                return nil
-            }
-            return WifiDetails(interface: name, ssid: ssid, bssid: bssid)
+            guard let info = CNCopyCurrentNetworkInfo(name as CFString) as? [String:AnyObject] else { return nil }
+            guard let ssid = info[kCNNetworkInfoKeySSID as String] as? String else { return nil }
+            return WifiDetails(interface: name, ssid: ssid)
         }
         return wifiInfo
     }
@@ -35,11 +27,7 @@ class Utilities {
         var isWifiAvailable = false
         if getWifiInfo().count > 0 {
             getWifiInfo().forEach({
-                if ($0.bssid == UserDefaults.standard.string(forKey: "BSSID") || $0.ssid == UserDefaults.standard.string(forKey: "SSID")) {
-                    isWifiAvailable = true
-                } else {
-                    isWifiAvailable = false
-                }
+                isWifiAvailable = $0.ssid == UserDefaults.standard.string(forKey: "SSID") ? true : false
             })
         }
         return isWifiAvailable

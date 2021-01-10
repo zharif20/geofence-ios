@@ -10,5 +10,4 @@ import Foundation
 struct WifiDetails {
     public let interface: String
     public let ssid: String
-    public let bssid: String
 }
